@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const LeadForm = () => {
-  const WEBHOOK_URL = "https://adryter.app.n8n.cloud/webhook-test/website-leads" || "";
+  const WEBHOOK_URL = "https://raj71.app.n8n.cloud/webhook-test/website-leads" || "";
 
   const [formData, setFormData] = useState({
     ID: "",

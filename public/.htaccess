@@ -1,0 +1,13 @@
+# React SPA routing for Apache (cPanel/Hostinger)
+# Ensures deep links route to index.html instead of 404
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Allow existing files and directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise, serve index.html
+RewriteRule ^ index.html [L]
